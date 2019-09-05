@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sistem_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sistema de Evaluación" />
+
+    <Spinner
+        android:id="@+id/spinner_app"
+        android:layout_below="@+id/sistem_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/sistem_view" />
+
+        <TextView
+            android:id="@+id/practice_app"
+            android:layout_width="250dp"
+            android:layout_below="@+id/spinner_app"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Practicas Teóricas"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/prom_practice"
+            android:layout_below="@+id/spinner_app"
+            android:layout_toRightOf="@+id/practice_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Promedio:"/>
+
+        <TextView
+            android:id="@+id/PT1_app"
+            android:layout_below="@+id/practice_app"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Práctica 1" />
+
+        <EditText
+            android:id="@+id/NT1_app"
+            android:layout_below="@+id/practice_app"
+            android:layout_toRightOf="@+id/PT1_app"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Nota 1" />
+
+    <TextView
+        android:id="@+id/PT2_app"
+        android:layout_below="@+id/NT1_app"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Práctica 2" />
+
+    <EditText
+        android:id="@+id/NT2_app"
+        android:layout_below="@+id/NT1_app"
+        android:layout_toRightOf="@+id/PT2_app"
+        android:layout_width="90dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
+        android:hint="Nota 2"/>
+
+
+        <TextView
+            android:id="@+id/calificate_app"
+            android:layout_width="250dp"
+            android:layout_below="@+id/NT2_app"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Practicas Laboratorio"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/prom_calificate"
+            android:layout_below="@+id/NT2_app"
+            android:layout_toRightOf="@+id/calificate_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Promedio:"/>
+
+        <TextView
+            android:id="@+id/PP1_app"
+            android:layout_below="@+id/prom_calificate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Práctica 1" />
+
+        <EditText
+            android:id="@+id/NP1_app"
+            android:layout_width="90dp"
+            android:layout_below="@+id/prom_calificate"
+            android:layout_toRightOf="@+id/PP1_app"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Nota 1"/>
+
+        <TextView
+            android:id="@+id/PP2_app"
+            android:layout_below="@+id/NP1_app"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Práctica 2" />
+
+        <EditText
+            android:id="@+id/NP2_app"
+            android:layout_width="90dp"
+            android:layout_below="@+id/NP1_app"
+            android:layout_toRightOf="@+id/PP2_app"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            android:hint="Nota 2"/>
+
+        <TextView
+            android:id="@+id/PP3_app"
+            android:layout_width="250dp"
+            android:layout_below="@+id/NP2_app"
+            android:layout_height="wrap_content"
+            android:text="Práctica 3"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/NP3_app"
+            android:layout_marginBottom="16dp"
+            android:layout_width="90dp"
+            android:layout_below="@+id/NP2_app"
+            android:layout_toRightOf="@+id/PP3_app"
+            android:layout_height="wrap_content"
+            android:hint="Nota 3"/>
+
+        <TextView
+            android:id="@+id/PP4_app"
+            android:layout_width="250dp"
+            android:layout_below="@+id/NP3_app"
+            android:layout_height="wrap_content"
+            android:text="Práctica 4"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/NP4_app"
+            android:layout_marginBottom="16dp"
+            android:layout_width="90dp"
+            android:layout_below="@+id/NP3_app"
+            android:layout_toRightOf="@+id/PP4_app"
+            android:layout_height="wrap_content"
+            android:hint="Nota 4"/>
+
+    <TextView
+        android:id="@+id/result_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="48dp"
+        android:layout_below="@+id/NP4_app"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/buton_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+</RelativeLayout>
